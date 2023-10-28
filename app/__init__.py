@@ -53,4 +53,4 @@ def index():
     return render_template('/index.html', visitor_count=visitor_count, visitors_last_hour=visitors_last_hour)
 
 if __name__ == '__main__':
-    app.run(debug=True, host=True)
+    app.run(debug=True, host="0.0.0.0")
