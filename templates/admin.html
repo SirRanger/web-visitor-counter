@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin-Seite</title>
+</head>
+<body>
+    <h1>Admin-Seite</h1>
+    <h2>Dateiinhalt:</h2>
+    <pre>{{ file_content }}</pre>
+    <h2>Ändere den Dateiinhalt:</h2>
+    <form method="post">
+        <textarea name="new_content" rows="10" cols="40"></textarea><br>
+        <input type="submit" value="Speichern">
+    </form>
+</body>
+</html>
