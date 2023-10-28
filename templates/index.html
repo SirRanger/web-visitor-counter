@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Web-App</title>
+</head>
+<body>
+    <h1>Web-App zur Dateneingabe</h1>
+    <form method="post">
+        <label for="number">Gib eine Zahl ein:</label>
+        <input type="text" name="number" id="number" required>
+        <input type="submit" value="Absenden">
+    </form>
+</body>
+</html>
