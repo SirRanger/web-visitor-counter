@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<b>
-<head>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
-    <title>Web-App</title>
-</head>
-<br>
-    <h1>Web-App zur Dateneingabe</h1>
-    <form method="post">
-        <label for="number">Gib eine Zahl ein:</label>
-        <input type="text" name="number" id="number" required>
-        <input type="submit" value="Absenden">
-    </form>
-    </br>
-    <div class="visitor-count">
-        Anzahl der letzten Besucher: {{ visitor_count }}
-    </div>
-    </br>
-    <div class="visitors-last-hour" style="font-size: large; color: rgb(26, 53, 24);">
-        Anzahl der Besucher in der letzten Stunde: {{ visitors_last_hour }}
-    </div>
-    
-</body>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../static/styles.css">
+        <title>Web-App</title>
+    </head>
+    <body>
+        <div class="section--counter">
+            <div class="section_content">
+                <h1>HWHS Besuchercount</h1>
+                <form method="post">
+                    <label for="number">Gib die Anzahl der Besucher ein:</label>
+                    <input type="number" name="number" id="number" required>
+                    <input type="submit" value="Absenden">
+                </form>
+                <div class="visitor-count">
+                    Anzahl der letzten Besucher: {{ visitor_count }}
+                </div>
+                <div class="visitors-last-hour">
+                    Anzahl der Besucher in der letzten Stunde: {{ visitors_last_hour }}
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
